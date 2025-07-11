@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(135deg, #e8f5e9 0%, #f8fffc 100%);
+  min-height: 100vh;
+}
+
+.register-main-row {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-illustration {
+  background: #fff;
+  border-radius: 1.5rem 0 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  min-height: 350px;
+}
+
+.register-illustration img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.register-card-custom {
+  border: none;
+  border-radius: 0 1.5rem 1.5rem 0;
+  box-shadow: 0 4px 32px 0 rgba(39, 174, 96, 0.10);
+  background: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 420px;
+  width: 100%;
+}
+
+.register-title {
+  color: #27ae60;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.btn-register-custom {
+  background: #27ae60;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+}
+
+.btn-register-custom:hover {
+  background: #219150;
+}
+
+@media (max-width: 991.98px) {
+  .register-main-row {
+    flex-direction: column;
+    min-height: unset;
+  }
+
+  .register-illustration,
+  .register-card-custom {
+    border-radius: 1.5rem;
+  }
+
+  .register-illustration {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .register-card-custom {
+    padding: 1.5rem 0.7rem;
+  }
+
+  .register-illustration {
+    padding: 1.5rem 0.7rem;
+  }
+
+  .register-illustration img {
+    max-width: 160px;
+  }
+}

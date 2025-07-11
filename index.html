@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Store - Home</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body style="padding-top:90px;">
+  <!-- Main Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <i class="fas fa-mobile-alt me-2" style="color:#27ae60;font-size:2rem;"></i> <span style="color:#27ae60;">Phone
+          Store</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item position-relative">
+            <a class="nav-link cart-icon" href="cart.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-badge" id="cartBadge">0</span>
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <a href="#" class="browse-all text-decoration-none">
+            <i class="fas fa-th-large"></i> All Products
+          </a>
+          <h6 class="fw-bold mb-3">Product Categories</h6>
+          <a href="#" class="category-item"><i class="fab fa-apple"></i> iPhone</a>
+          <a href="#" class="category-item"><i class="fas fa-mobile-alt"></i> Realme</a>
+          <a href="#" class="category-item"><i class="fas fa-mobile-alt"></i> Samsung</a>
+          <a href="#" class="category-item"><i class="fas fa-mobile-alt"></i> Oppo</a>
+          <a href="#" class="category-item"><i class="fas fa-mobile-alt"></i> Vivo</a>
+        </div>
+      </div>
+
+      <!-- Main Banner -->
+      <div class="col-lg-9">
+        <div class="hero-section">
+          <div class="hero-content">
+            <h1 class="fade-in-up">Phones & Accessories<br>Special Offers</h1>
+            <p class="fade-in-up" style="animation-delay:0.2s;">Save up to 50% on your first order! We provide
+              high-quality
+              iPhones, Xiaomi, Samsung, Oppo, and accessories.</p>
+            <a href="#products" class="hero-cta fade-in" style="animation-delay:0.4s;">
+              <i class="fas fa-shopping-bag"></i>
+              Shop Now
+            </a>
+          </div>
+          <!-- <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&h=300&fit=crop" alt="Phone Banner" class="hero-image"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Products -->
+  <section class="featured-products" id="products" style="scroll-margin-top:110px;">
+    <div class="container">
+      <h2 class="section-title display-6 fw-semibold text-success text-center mb-2" style="letter-spacing:1px;">
+        <i class="fas fa-star me-2"></i>Featured Products
+      </h2>
+      <div class="d-flex justify-content-center mb-4">
+        <div style="width:60px;height:3px;background:#27ae60;border-radius:2px;"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro.png"
+                alt="iPhone 16 Pro" class="product-img-custom">
+              <div class="discount-badge">-15%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">iPhone 16 Pro Max 256GB</div>
+              <div class="product-price">
+                22.090.000đ
+                <span class="product-old-price">25.990.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "iphone-16-pro", name: "iPhone 16 Pro Max 256GB", price: 22090000, image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro.png"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img src="https://cdn.tgdd.vn/Products/Images/42/226264/xiaomi-mi-11-xanhduong-600x600-600x600.jpg"
+                alt="Xiaomi Mi 11" class="product-img-custom">
+              <div class="discount-badge">-20%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">Xiaomi Mi 11 5G</div>
+              <div class="product-price">
+                13.030.000đ
+                <span class="product-old-price">16.290.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "xiaomi-mi-11", name: "Xiaomi Mi 11 5G", price: 13030000, image: "https://cdn.tgdd.vn/Products/Images/42/226264/xiaomi-mi-11-xanhduong-600x600-600x600.jpg"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s25-utra.png"
+                alt="Samsung Galaxy S21" class="product-img-custom">
+              <div class="discount-badge">-18%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">Samsung Galaxy S25 Ultra </div>
+              <div class="product-price">
+                15.000.000đ
+                <span class="product-old-price">18.290.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "samsung-galaxy-s25", name: "Samsung Galaxy S25 Ultra", price: 15000000, image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s25-utra.png"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img
+                src="https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture/Apro/Apro_product_36628/oppo-reno14-5g-_main_67.png"
+                alt="Oppo Reno14" class="product-img-custom">
+              <div class="discount-badge">-22%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">Oppo Reno14</div>
+              <div class="product-price">
+                8.960.000đ
+                <span class="product-old-price">11.490.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "oppo-reno14", name: "Oppo Reno14", price: 8960000, image: "https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture/Apro/Apro_product_36628/oppo-reno14-5g-_main_67.png"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img src="https://sonpixel.vn/wp-content/uploads/2024/12/oppo-find-x8-pro-9.webp" alt="OPPO Find X8 Pro"
+                class="product-img-custom">
+              <div class="discount-badge">-12%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">OPPO Find X8 Pro</div>
+              <div class="product-price">
+                20.230.000đ
+                <span class="product-old-price">22.990.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "oppo-find-x8", name: "OPPO Find X8 Pro", price: 20230000, image: "https://sonpixel.vn/wp-content/uploads/2024/12/oppo-find-x8-pro-9.webp"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img
+                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/e/f/ef-of95pc_001_front_gray_240514.png"
+                alt="Samsung Galaxy Z Fold6" class="product-img-custom">
+              <div class="discount-badge">-10%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">Samsung Galaxy Z Fold6</div>
+              <div class="product-price">
+                8.990.000đ
+                <span class="product-old-price">9.990.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "samsung-galaxy-z-fold6", name: "Samsung Galaxy Z Fold6", price: 8990000, image: "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/e/f/ef-of95pc_001_front_gray_240514.png"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img
+                src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1744103027626/e506c9820501690dd40ff9088c16f833.png"
+                alt="Vivo V50 Lite 5G" class="product-img-custom">
+              <div class="discount-badge">-14%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">Vivo V50 Lite 5G</div>
+              <div class="product-price">
+                24.070.000đ
+                <span class="product-old-price">27.990.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "vivo-v50", name: "Vivo V50 Lite 5G", price: 24070000, image: "https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1744103027626/e506c9820501690dd40ff9088c16f833.png"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img src="https://dienthoaipro.com/wp-content/uploads/2024/09/v29e.webp" alt="Vivo V30e"
+                class="product-img-custom">
+              <div class="discount-badge">-11%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">Vivo V29E 8GB 256GB</div>
+              <div class="product-price">
+                8.000.000đ
+                <span class="product-old-price">8.990.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "vivo-v29e", name: "Vivo V29E 8GB 256GB", price: 8000000, image: "https://dienthoaipro.com/wp-content/uploads/2024/09/v29e.webp"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img
+                src="https://cdn.nguyenkimmall.com/images/thumbnails/1024/717/product/1006/V-IPHONE-16-HONG1_kh1q-b0.jpg"
+                alt="iPhone 16 128GB" class="product-img-custom">
+              <div class="discount-badge">-18%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">iPhone 16 128GB</div>
+              <div class="product-price">
+                18.050.000đ
+                <span class="product-old-price">22.990.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "iphone-16-128", name: "iPhone 16 128GB", price: 18050000, image: "https://cdn.nguyenkimmall.com/images/thumbnails/1024/717/product/1006/V-IPHONE-16-HONG1_kh1q-b0.jpg"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img
+                src="https://product.hstatic.net/1000259254/product/iphone_15_pro_2023_-_xam_0a2c626e9d2a4f84a1771dd1f0c793a3_master.jpg"
+                alt="iPhone 15 Pro Max 256GB" class="product-img-custom">
+              <div class="discount-badge">-15%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">iPhone 15 Pro Max 256GB</div>
+              <div class="product-price">
+                20.390.000đ
+                <span class="product-old-price">23.990.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "iphone-15-pro-max", name: "iPhone 15 Pro Max 256GB", price: 20390000, image: "https://product.hstatic.net/1000259254/product/iphone_15_pro_2023_-_xam_0a2c626e9d2a4f84a1771dd1f0c793a3_master.jpg"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img
+                src="https://didongmango.com/images/products/2023/04/06/large/thumb_note20_3_1665999197jpg_1669907777_1680832319.jpg"
+                alt="Samsung Galaxy Note 20 5G" class="product-img-custom">
+              <div class="discount-badge">-5%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">Samsung Galaxy Note 20 5G</div>
+              <div class="product-price">
+                4.750.000đ
+                <span class="product-old-price">5.000.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "samsung-note-20", name: "Samsung Galaxy Note 20 5G", price: 4750000, image: "https://didongmango.com/images/products/2023/04/06/large/thumb_note20_3_1665999197jpg_1669907777_1680832319.jpg"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card product-card h-100 fade-in-up">
+            <div class="product-image position-relative">
+              <img src="https://cdn.mobilecity.vn/mobilecity-vn/images/2025/05/oppo-reno14-pro-tim.jpg.webp"
+                alt="Oppo Reno 14 Pro" class="product-img-custom">
+              <div class="discount-badge">-10%</div>
+            </div>
+            <div class="card-body d-flex flex-column align-items-center">
+              <div class="product-title">Oppo Reno 14 Pro</div>
+              <div class="product-price">
+                25.860.000đ
+                <span class="product-old-price">28.735.000đ</span>
+              </div>
+              <button class="btn btn-success btn-add-cart mt-auto w-100"
+                onclick='addToCart({id: "oppo-reno14-pro", name: "Oppo Reno 14 Pro", price: 25860000, image: "https://cdn.mobilecity.vn/mobilecity-vn/images/2025/05/oppo-reno14-pro-tim.jpg.webp"})'>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services-section py-5">
+    <div class="container">
+      <h2 class="section-title display-6 fw-semibold text-success text-center mb-2" style="letter-spacing:1px;">
+        <i class="fas fa-cogs me-2"></i>Our Services
+      </h2>
+      <div class="d-flex justify-content-center mb-5">
+        <div style="width:60px;height:3px;background:#27ae60;border-radius:2px;"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <div class="card service-card flex-fill text-center p-4 fade-in-up">
+            <div class="service-icon mb-3">
+              <i class="fa-solid fa-truck" style="color:#27ae60; font-size:2.5rem;"></i>
+            </div>
+            <h5 class="fw-bold mb-2" style="color:#27ae60;">Free Shipping</h5>
+            <p class="text-muted mb-0">Free shipping for phone orders over 2 million VND within the city.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <div class="card service-card flex-fill text-center p-4 fade-in-up">
+            <div class="service-icon mb-3">
+              <i class="fa-solid fa-shield" style="color:#27ae60; font-size:2.5rem;"></i>
+            </div>
+            <h5 class="fw-bold mb-2" style="color:#27ae60;">Official Warranty</h5>
+            <p class="text-muted mb-0">Official warranty for phones from 12-36 months, 24/7 technical support.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <div class="card service-card flex-fill text-center p-4 fade-in-up">
+            <div class="service-icon mb-3">
+              <i class="fa-solid fa-rotate-left" style="color:#27ae60; font-size:2.5rem;"></i>
+            </div>
+            <h5 class="fw-bold mb-2" style="color:#27ae60;">Easy Returns</h5>
+            <p class="text-muted mb-0">15-day return policy for phones, 100% money-back guarantee if not satisfied.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="container">
+      <h2 class="newsletter-title">Subscribe for Promotions</h2>
+      <p class="newsletter-subtitle">Get the latest promotions and new product updates via email</p>
+      <form class="newsletter-form">
+        <input type="email" class="newsletter-input" placeholder="Enter your email...">
+        <button type="submit" class="newsletter-btn">
+          <i class="fas fa-paper-plane"></i> Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <div id="footerContainer"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('footerContainer').innerHTML = html);
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js">
+  </script>
+</body>
+
+</html>
